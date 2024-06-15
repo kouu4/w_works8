@@ -206,6 +206,15 @@
             wp_reset_postdata();
             ?>
         </ul>
+        <div class="news__moreItem">
+            <div>
+                <a href="<?php echo get_post_type_archive_link('custom_type_news'); ?>" class="news__moreItemLink fadeInAndUp-target">
+                    Read More
+                </a>
+            </div>
+
+        </div>
+        <!-- /.news__moreItem -->
     </section>
 
 

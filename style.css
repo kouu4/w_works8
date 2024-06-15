@@ -1216,6 +1216,9 @@ input[type=radio]:checked + .Con-form__param-caption::before {
   opacity: 1;
   color: black;
 }
+.news__item + .news__item {
+    margin-top: 52px;
+}
 .news__item:hover {
   opacity: 0.5;
 }
@@ -1242,6 +1245,28 @@ input[type=radio]:checked + .Con-form__param-caption::before {
 
 .news__itemdesc {
   margin-top: 25px;
+}
+
+.news__moreItem{
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__moreItemLink {
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    background-color: #0b362f;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px), print {
+    .news__moreItemLink {
+        padding: 20px 110px;
+    }
 }
 
 @media screen and (min-width: 768px), print {

@@ -20,7 +20,9 @@
     <header class="header">
 
         <h1 class="alwaysVisible__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/src/img/header_logo.svg" alt="Logo">
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/img/header_logo.svg" alt="Logo">
+            </a>
         </h1>
         <!-- /.alwaysVisible__logo -->
 
@@ -54,7 +56,7 @@
                                 </a>
                             </li>
                             <li class="overlayMenu__item">
-                                <a href="<?php echo get_permalink(get_page_by_path('news')); ?>" class="overlayMenu__link text__hamburgerMenu">
+                                <a href="<?php echo get_post_type_archive_link( 'custom_type_news' ); ?>" class="overlayMenu__link text__hamburgerMenu">
                                     News
                                     <span class="overlayMenu__subTxt text__hamburgerMenu-sub">お知らせ</span>
                                 </a>
@@ -127,4 +129,3 @@
 
     </header>
     <!-- /.header -->
-
