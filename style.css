@@ -1033,15 +1033,6 @@ input[type=radio]:checked + .Con-form__param-caption::before {
     margin: 0 auto;
   }
 }
-.coutionaryNote {
-  color: #fff;
-  background-color: #040000;
-  padding-inline: 1rem;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .fadeInAndUp {
   animation: fadeInAndUp 1s ease-out forwards;

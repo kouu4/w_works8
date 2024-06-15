@@ -16,12 +16,6 @@
 
 
 <body>
-    <div class="coutionaryNote">
-        <p>このサイトはhttps://xleverage.co.jp/ を模写したものです。</p>
-        <p>権利関係回避のため画像や文章を入れ替えています。</p>
-        <p>また検索エンジンによるクローリングを回避するためのメタタグも記入しています。</p>
-    </div>
-    <!-- /.coutionary-note -->
 
     <header class="header">
 
