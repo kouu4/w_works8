@@ -23,6 +23,7 @@
             <!-- /.commonFirstView__inner -->
         </section>
 
+
         <?php
         // ここからカスタムポストタイプ 'custom_type_news' の特定の記事を取得するループ
         $slug = get_query_var('name');  // URLからスラッグを取得
