@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
 
-
+// パンくずリスト
 function simple_breadcrumb()
 {
     if (!is_front_page()) {

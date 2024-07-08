@@ -205,7 +205,7 @@
         </ul>
         <div class="news__moreItem">
             <div>
-                <a href="<?php echo get_post_type_archive_link('custom_type_news'); ?>" class="news__moreItemLink fadeInAndUp-target">
+                <a href="<?php echo get_permalink(get_page_by_path( 'news' ) ); ?>" class="news__moreItemLink fadeInAndUp-target">
                     Read More
                 </a>
             </div>
