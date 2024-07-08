@@ -15,9 +15,6 @@
         </video>
     </section>
 
-
-
-
     <section class="aboutUs aboutUs--bg">
 
         <h2 class="aboutUs__ttl text__headline-gl fadeInAndUp-target">
