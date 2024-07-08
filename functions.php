@@ -19,3 +19,33 @@ add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
 
+
+// パンくずリスト
+function simple_breadcrumb()
+{
+    if (!is_front_page()) {
+        echo '<a href="' . home_url() . '" class="text__breadcrumbs">Home</a>';
+        if (is_category() || is_single()) {
+            the_category(' &bull; ');
+            if (is_single()) {
+                echo '<span class="text__breadcrumbs"> / ' . get_the_title() . '</span>';
+            }
+        } elseif (is_page()) {
+            if (is_page('aboutus')) {
+                echo '<span class="text__breadcrumbs"> / 会社概要</span>';
+            } else if (is_page('businessintroduction')) {
+                echo '<span class="text__breadcrumbs"> / 事業紹介</span>';
+            } else if (is_page('contact')) {
+                echo '<span class="text__breadcrumbs"> / お問合せ</span>';
+            } else if (is_page('news')) {
+                echo '<span class="text__breadcrumbs"> / お知らせ</span>';
+            } else if (is_page('privacypolicy')) {
+                echo '<span class="text__breadcrumbs"> / 個人情報保護方針</span>';
+            } else {
+                echo '<span class="text__breadcrumbs"> / ' . get_the_title() . '</span>';
+            }
+        }
+    }
+}
+
+

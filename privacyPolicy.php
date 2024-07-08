@@ -19,14 +19,10 @@ Template Name: privacyPolicy
                     </span>
                 </h1>
                 <div class="commonFirstView__breadcrumbs breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="<?php home_url(); ?>" class="breadcrumbs__link text__breadcrumbs">HOME</a>
-                        </li>
-                        <li class="breadcrumbs__currentPage">
-                            <span class="text__breadcrumbs">個人情報保護方針</span>
-                        </li>
-                    </ul>
+                <?php if (function_exists('simple_breadcrumb')) {
+                    simple_breadcrumb();
+                }
+                ?>
                 </div>
                 <!-- /.breadcrumbs -->
             </div>

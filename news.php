@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: news
+*/
+?>
+
 <?php get_header(); ?>
 
 <main class="main container">
@@ -13,14 +19,10 @@
                 </span>
             </h1>
             <div class="commonFirstView__breadcrumbs breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a href="<?php echo home_url(); ?>" class="breadcrumbs__link text__breadcrumbs">HOME</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="<?php echo home_url(); ?>#news" class="breadcrumbs__link text__breadcrumbs">News</a>
-                    </li>
-                </ul>
+            <?php if (function_exists('simple_breadcrumb')) {
+                    simple_breadcrumb();
+                }
+                ?>
             </div>
             <!-- /.breadcrumbs -->
         </div>

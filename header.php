@@ -56,7 +56,7 @@
                                 </a>
                             </li>
                             <li class="overlayMenu__item">
-                                <a href="<?php echo get_post_type_archive_link( 'custom_type_news' ); ?>" class="overlayMenu__link text__hamburgerMenu">
+                                <a href="<?php echo get_permalink(get_page_by_path( 'news' ) ); ?>" class="overlayMenu__link text__hamburgerMenu">
                                     News
                                     <span class="overlayMenu__subTxt text__hamburgerMenu-sub">お知らせ</span>
                                 </a>
