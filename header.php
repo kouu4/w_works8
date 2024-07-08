@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet" media="all" onload="this.media='all'">
     <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="dist/css/style.css"> -->
-    <title>Document</title>
+    <title>X marketing</title>
 
     <?php wp_head(); ?>
 
