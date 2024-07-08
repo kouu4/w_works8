@@ -835,6 +835,10 @@
   bottom: 15px;
 }
 
+.commonFirstView__breadcrumbs a:visited {
+    color: #040000;
+}
+
 .Con-guide {
   margin-top: 55px;
 }
